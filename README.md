@@ -7,7 +7,7 @@
 * Make the form work!
 
 ### Super Mega Bonus Credit
-* Make a working delete button 
+* Make a working _delete_ button 
 <!-- onclick -->
 ### Super Mega Bonus Credit Hyper Fighting
 * When you click on a note in the list, populate the form with the data from that note.

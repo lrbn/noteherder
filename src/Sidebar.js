@@ -1,16 +1,20 @@
 import React from 'react'
 
+import quill from './quill.svg'
+import new_hover from './new-hover.png'
+import new_ from './new.png'
+
 import './Sidebar.css'
 
 const Sidebar = () => {
   return (
     <div className="Sidebar">
-      <div class="logo">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/quill.svg" alt="Noteherder" />
+      <div className="logo">
+        <img src={quill} alt="Noteherder" />
       </div>
-      <button class="new-note">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/new-hover.png" alt="New note" />
-        <img class="outline" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/new.png" alt="New note" />
+      <button className="new-note">
+        <img src={new_hover} alt="New note" />
+        <img className="outline" src={new_} alt="New note" />
       </button>
     </div>
   )
