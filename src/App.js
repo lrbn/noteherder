@@ -8,7 +8,8 @@ class App extends Component {
       notes: {},
     }
   }
-
+  // method: show note
+  // method: call delete
   saveNote = (note) => {
     if (!note.id) {
       note.id = `note-${Date.now()}`
