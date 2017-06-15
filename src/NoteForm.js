@@ -29,10 +29,15 @@ class NoteForm extends Component {
     )
   }
 
+  handleSubmit = (ev) => {
+    ev.preventDefault()
+    this.setState({ note: this.blankNote() })
+  }
+
   render() {
     return (
       <div className="NoteForm">
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <p>
             <input
               type="text"
@@ -49,6 +54,7 @@ class NoteForm extends Component {
               onChange={this.handleChanges}
               value={this.state.note.body}
             ></textarea>
+            <button type="submit">Save and new</button>
           </p>
         </form>
       </div>
