@@ -2,6 +2,7 @@ import React from 'react'
 
 import './NoteList.css'
 import Note from './Note'
+
                   // destructuring
 const NoteList = ({ notes }) => {
   return (
