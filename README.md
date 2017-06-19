@@ -1,5 +1,9 @@
 # Noteherder
 
+## Setup
+Copy `base.example.js` to `base.js` and add the appropriate configuation for your Firebase application.
+
+
 ## Day 7 Homework
 * Finish making these components look acceptable
 
@@ -8,6 +12,6 @@
 
 ### Super Mega Bonus Credit
 * Make a working _delete_ button 
-<!-- onclick -->
+
 ### Super Mega Bonus Credit Hyper Fighting
 * When you click on a note in the list, populate the form with the data from that note.

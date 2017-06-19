@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
+
 import './App.css';
 import Main from './Main'
+import base from './base'
+
 class App extends Component {
   constructor() {
     super()
     this.state = {
       notes: {},
     }
+  }
+  componentWillMount() {
+    base.syncState(
+      'notes',
+      {
+        context: this,
+        state: 'notes',
+      }
+    )
   }
   // method: show note
   // method: call delete
