@@ -13,13 +13,19 @@
   background: none;
   padding: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 .NoteForm button i.fa {
   color: #999;
   font-size: 2rem;
   margin: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 .NoteForm button[type="submit"] {
   background-color: #008BF8;
   border-radius: 4px;
@@ -38,7 +44,10 @@ input[name="title"] {
   color: #008BF8;
   font-weight: 400;
   width: 100%;
+<<<<<<< HEAD
   z-index: 1;
+=======
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 }
 input[name="title"] {
   outline: none;
@@ -48,4 +57,8 @@ textarea {
   width: 100%;
   height: calc(100vh - 140px);
   font-size: 1.3em;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22

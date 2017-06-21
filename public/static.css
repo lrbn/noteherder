@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 /* App.css */
 @import url("https://fonts.googleapis.com/css?family=Fauna+One|Oxygen:400,300,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+=======
+@import url("https://fonts.googleapis.com/css?family=Fauna+One|Oxygen:400,300,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 * {
   box-sizing: border-box;
 }
@@ -39,9 +45,13 @@ i.fa-trash-o {
   display: flex;
   height: 100vh;
   align-items: stretch; }
+<<<<<<< HEAD
  /* App.css */
 
 /* Sidebar.css */
+=======
+
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 .Nav {
   width: 60px;
   background-color: #f3f3f3;
@@ -74,9 +84,13 @@ i.fa-trash-o {
     transition: opacity 0.25s ease-in-out; }
     .Nav button:hover img.outline {
       opacity: 0; }
+<<<<<<< HEAD
 /* Sidebar.css */
 
 /* NoteList.css */
+=======
+
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 .NoteList {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -169,9 +183,13 @@ ul#notes li .note {
   padding: 1em;
   text-decoration: none;
 }
+<<<<<<< HEAD
 /* NoteList.css */
 
 /* NoteForm.css */
+=======
+
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
 .NoteForm {
   flex-grow: 1;
   padding: 0 3rem;
@@ -213,4 +231,7 @@ textarea {
   height: calc(100vh - 140px);
   font-size: 1.3em;
 }
+<<<<<<< HEAD
 /* NoteForm.css */
+=======
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22

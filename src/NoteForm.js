@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import './NoteForm.css'
 
 class NoteForm extends Component {
+<<<<<<< HEAD
   constructor(props) {
     super(props)
 
@@ -42,19 +43,37 @@ class NoteForm extends Component {
 
   handleRemove = (ev) => {
     this.props.removeNote(this.state.note)
+=======
+  handleChanges = (ev) => {
+    const note = {...this.props.currentNote}
+    note[ev.target.name] = ev.target.value
+    this.props.saveNote(note)
+  }
+
+  handleRemove = (ev) => {
+    this.props.removeNote(this.props.currentNote)
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
   }
 
   render() {
     return (
       <div className="NoteForm">
+<<<<<<< HEAD
         <form onSubmit={this.handleSubmit}>
+=======
+        <form>
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
           <p>
             <input
               type="text"
               name="title"
               placeholder="Title your note"
               onChange={this.handleChanges}
+<<<<<<< HEAD
               value={this.state.note.title}
+=======
+              value={this.props.currentNote.title}
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
             />
           </p>
           <p>
@@ -62,6 +81,7 @@ class NoteForm extends Component {
               name="body"
               placeholder="Just start typing..."
               onChange={this.handleChanges}
+<<<<<<< HEAD
               value={this.state.note.body}
             ></textarea>
           </p>
@@ -69,6 +89,15 @@ class NoteForm extends Component {
             Save and new
           </button>
           <button onClick={this.handleRemove}>
+=======
+              value={this.props.currentNote.body}
+            ></textarea>
+          </p>
+          <button
+            type="button"
+            onClick={this.handleRemove}
+          >
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
             <i className="fa fa-trash-o"></i>
           </button>
         </form>

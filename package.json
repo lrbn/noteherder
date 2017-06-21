@@ -1,6 +1,10 @@
 {
   "name": "noteherder",
+<<<<<<< HEAD
   "homepage": "http://lrbn.github.io/noteherder",
+=======
+  "homepage": "http://xtbc17s2.github.io/noteherder",
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -20,4 +20,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 base.js
+=======
+base.js
+>>>>>>> b87b8cd03544084f456dbebf78133d92368c3f22
