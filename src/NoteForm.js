@@ -3,12 +3,18 @@ import React, { Component } from 'react'
 import './NoteForm.css'
 
 class NoteForm extends Component {
-
   constructor(props) {
     super(props)
 
     this.state = {
       note: this.blankNote(),
+    }
+  }
+
+  componentWillReceiveProps = (nextProps) => {
+    const newId = nextProps.currentNoteId
+    if (newId !== this.state.note.id) {
+      this.setState({ note: nextProps.notes[newId] })
     }
   }
 
@@ -21,7 +27,7 @@ class NoteForm extends Component {
   }
 
   handleChanges = (ev) => {
-    const note = { ...this.state.note }
+    const note = {...this.state.note}
     note[ev.target.name] = ev.target.value
     this.setState(
       { note },
@@ -32,6 +38,10 @@ class NoteForm extends Component {
   handleSubmit = (ev) => {
     ev.preventDefault()
     this.setState({ note: this.blankNote() })
+  }
+
+  handleRemove = (ev) => {
+    this.props.removeNote(this.state.note)
   }
 
   render() {
@@ -45,7 +55,7 @@ class NoteForm extends Component {
               placeholder="Title your note"
               onChange={this.handleChanges}
               value={this.state.note.title}
-            ></input>
+            />
           </p>
           <p>
             <textarea
@@ -54,8 +64,13 @@ class NoteForm extends Component {
               onChange={this.handleChanges}
               value={this.state.note.body}
             ></textarea>
-            <button type="submit">Save and new</button>
           </p>
+          <button type="submit">
+            Save and new
+          </button>
+          <button onClick={this.handleRemove}>
+            <i className="fa fa-trash-o"></i>
+          </button>
         </form>
       </div>
     )
