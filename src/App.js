@@ -6,6 +6,8 @@ import SignIn from './SignIn'
 import SignOut from './SignOut'
 import base, { auth } from './base'
 
+import { Switch, Route, NavLink } from 'react-router-dom'
+
 class App extends Component {
   constructor() {
     super()
@@ -109,7 +111,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { this.signedIn() ? this.renderMain() : <SignIn /> }
+        {/*{ this.signedIn() ? this.renderMain() : <SignIn /> }*/}
       </div>
     )
   }
